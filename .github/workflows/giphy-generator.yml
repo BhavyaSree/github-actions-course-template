@@ -4,15 +4,14 @@ on:
   issues: 
     types: [opened, edited]
   pull_request: 
-    types: [opened, edited, created, updated]
-    branches: [ master ]
+    types: [opened, edited]
   issue_comment:
     types: [opened, edited]
     
     
 jobs:
   giphy-generator: 
-  runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
     
   steps: 
     - name: GIPHY Generator
